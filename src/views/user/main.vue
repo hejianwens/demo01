@@ -27,8 +27,7 @@
                             <span>猜你喜欢</span>
                         </div>
                         <div class="changRecommandDiv">
-                            <el-button type="primary" v-if="isLoginFlag==true" @click="initTableList">换一批</el-button>
-                            <span v-if="isLoginFlag==false">亲亲~你还没登录，请登录</span>
+                            <el-button type="primary" @click="initTableList">换一批</el-button>
                         </div>
                     </div>
                     <ul class="goodsUl">
@@ -243,7 +242,7 @@
         mounted() {
             let _this = this;
             _this.getGoodsKinds();
-            _this.checkLogin();
+
 
 
         },
